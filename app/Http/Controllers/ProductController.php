@@ -187,6 +187,7 @@ class ProductController extends Controller
                     '<a onclick="editForm('. $product->id .')" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a> ' .
                     '<a onclick="deleteData('. $product->id .')" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Delete</a>';
             })
+            ->addIndexColumn()
             ->rawColumns(['category_name','show_photo','action'])->make(true);
 
     }
