@@ -158,7 +158,7 @@
             serverSide: true,
             ajax: "{{ route('api.productsOut') }}",
             columns: [
-                {data: 'id', name: 'id'},
+                { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
                 {data: 'products_name', name: 'products_name'},
                 {data: 'customer_name', name: 'customer_name'},
                 {data: 'qty', name: 'qty'},

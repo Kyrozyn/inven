@@ -162,6 +162,7 @@ class ProductMasukController extends Controller
 
 
             })
+            ->addIndexColumn()
             ->rawColumns(['products_name','supplier_name','action'])->make(true);
 
     }
